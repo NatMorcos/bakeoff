@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+ 
+  <head>
+      <meta charset="utf-8">
+      <title>Bake Off Voting</title>
+      <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+      <link href="./css/styles.css" rel="stylesheet" type="text/css">
+  </head>
+ 
+  <body>
+ 
+    <header>
+        <h1>Vote!!</h1>
+    </header>
+ 
+    <main>
+      <form id="votingForm" class="form-horizontal">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+          <div class="panel panel-default cookie" data-cookie-name="cookieName">
+            <div class="panel-heading" role="tab" id="heading_cookieName">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_cookieName" class="collapsed">
+                  CookieName
+                </a>
+              </h4>
+            </div>
+
+            <div id="collapse_cookieName" class="panel-collapse collapse" role="tabpanel">
+              <div class="panel-body">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">taste</label>
+                    <div class="col-sm-10">
+                      <select class="form-control" name="taste_cookieName">
+                        <option>Select One</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">texture</label>
+                    <div class="col-sm-10">
+                      <select class="form-control" name="texture_cookieName">
+                        <option>Select One</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">presentation</label>
+                    <div class="col-sm-10">
+                      <select class="form-control" name="presentation_cookieName">
+                        <option>Select One</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">name creativity</label>
+                    <div class="col-sm-10">
+                      <select class="form-control" name="name_cookieName">
+                        <option>Select One</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <hr />
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+
+      </form>
+
+    </main>
+  
+    <footer>Om Nom Nom!</footer>
+  
+  </body>
+
+  <script src="./js/vendor/primus.js" type="text/javascript"></script>
+  <script src="./js/vendor/jquery-1.11.1.min.js" type="text/javascript"></script>
+  <script src="./js/vendor/bootstrap.min.js" type="text/javascript"></script>
+  <script src="./js/voting.js" type="text/javascript"></script>
+
+  </body>
+</html>
+
+
+
+
