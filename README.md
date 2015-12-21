@@ -1,6 +1,6 @@
-CDTO-09  
+bakeoff
 Natalie Morcos  
-11 jul 2014
+21 dec 2015
 
 Requirements
 ============
@@ -18,36 +18,32 @@ Install Dependencies:
 
     $ npm install
 
-Start "noiseMaker" Server:
+Start Server:
 
     $ npm start  
 
-"Soundboard" client:
 
-    student_distro/index.html  
-    line 50: needs the address of the "noiseMaker" Server
+RESULTS PAGE 
+============
+
+- cookie type name
+- total score
+- category breakdown
+- sorted
 
 
-RESTful API
+COOKIE REGISTRATION
+===================
+
+- ability to enter cookie type
+- propagates to voting pages
+
+
+VOTING PAGE
 ===========
 
-`GET /assigments`  
-:  Get a unique pool number/ rank number pairing  
-`{ "pool": ":pid", "rank" : ":rid" }`
+- displays all cookie names in an acordian
+- expanding displays the voting categories
+- entered votes post to results page
 
-
-Project Structure
-=================
-
-`app.js`
-
- :    Express based HTTP server / router
-
-`functions.js`
-
- :    The main server logic
-
-`primus_init.js`
-
- :     Dealing with socket communications
 
