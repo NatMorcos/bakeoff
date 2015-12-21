@@ -28,6 +28,9 @@ module.exports = function(primus){
     spark.on('register cookie', function(data){
       console.log(data);
       functions.addCookie(data);
+      console.log("========");
+      console.log(functions.listCookies());
+      console.log("========");
       spark.room('votingRoom').send('cookie registered', data);
     });
   });
