@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
   function displayCookie(data){
+    //TODO accommodate existing scores
     $newResult = $('.result').first().clone();
     cookieSlug = data.cookieName.replace(/ /g, "_");
 
@@ -20,6 +21,13 @@ $(document).ready(function(){
       console.log(data);
       displayCookie(data);
     });
+
+    primus.on('load results', function(data){
+      console.log("load results")
+      for(cookie in data){
+        displayCookie(data[cookie]);
+      }
+    })
 
   });
 });

@@ -15,13 +15,14 @@ module.exports = function(primus){
 			spark.join('votingRoom', function(){
 				callback && callback();
 				console.log('results board up and listening');
-			});
-		});
+        spark.room('votingRoom').send('load results', functions.listCookies());
+      });
+    });
 
     spark.on('registrar join', function(callback){
       spark.join('votingRoom', function(){
+        console.log('ready to register cookies (^.^)');
         callback && callback();
-        console.log('ready to register cookie (^.^)');
       });
     });
 
